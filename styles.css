@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #c5dcdd;
+}
+
+header {
+  margin-block: 3em;
+}
+
+.nav-link {
+  color: black
+}
+
+.violin {
+  font-size: 0.8rem;
+}
+
+.bigname {
+  font-size: 2rem;
+}
+
+
+.olmer {
+  outline: 1px dashed red;
+  outline-offset: -1px;
+}
+
+.olme {
+  outline: 1px dashed yellowgreen;
+  outline-offset: -1px;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.parent>* {
+  margin: auto;
+}
+
+.parent img {
+  border-radius: 50px;
+  min-width: 280px;
+  max-width: 280px;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
