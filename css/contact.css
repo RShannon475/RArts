@@ -9,7 +9,7 @@ body {
 /* Hack? add an image under the body so we can add opacity */
 body::after {
     content: "";
-    background-image: url('/images/Palaver_Aug2020_RedDoor_030_HR.jpg');
+    background-image: url('../images/Palaver_Aug2020_RedDoor_030_HR.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
