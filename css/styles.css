@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  --steel-blue: #347fc4;
+  --federal-blue: #140d4f;
+  --charcoal: #364958;
+  --glaucous: hsl(215, 45%, 58%);
+  --platinum: #dae3e5;
+  --light-blue: #c5dcdd;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navbar-brand {
+  font-family: "Fira Code", monospace;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.nav-link {
+  color: black
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+/* .olmer {
+  outline: 1px dashed red;
+  outline-offset: -1px;
+}
+
+.olme {
+  outline: 1px dashed yellowgreen;
+  outline-offset: -1px;
+} */
