@@ -22,7 +22,7 @@ body {
 }
 
 .textbox-title {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1;
     word-wrap: break-word;
 }
@@ -49,7 +49,7 @@ body {
    the jpg size enough to make it look good until large (992) */
 @media (min-width: 992px) {
     .textbox-title {
-        font-size: 3.5em;
+        font-size: 3em;
         word-wrap: break-word;
     }
 
