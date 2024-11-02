@@ -1,27 +1,24 @@
-@import 'styles.css';
-
+@import "styles.css";
 
 body {
-    background: #c5dcdd;
-    height: 100vh;
+  background: #c5dcdd;
+  height: 100vh;
 }
 
 .card {
-    /* without this cards with less text will be shorter */
-    height: 100%;
-  }
-  
-  .card img {
-    /* necessary because img is inside anchor */
-    max-width: 100%;
-  }
-  
-  .card-body {
-    text-align: center;
-  }
-  
-  .card-text {
-    font-size: 0.9rem;
-  }
-  
-  
+  /* without this cards with less text will be shorter */
+  height: 100%;
+}
+
+.card img {
+  /* necessary because img is inside anchor */
+  max-width: 100%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
