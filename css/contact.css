@@ -1,52 +1,50 @@
-@import 'styles.css';
-
+@import "styles.css";
 
 body {
-    background: white;
-    height: 100vh;
+  background: white;
+  height: 100vh;
 }
 
 /* Hack? add an image under the body so we can add opacity */
 body::after {
-    content: "";
-    background-image: url('../images/Palaver_Aug2020_RedDoor_030_HR.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.8;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  content: "";
+  background-image: url("../images/Palaver_Aug2020_RedDoor_030_HR.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .contact-row2 {
-    flex-wrap: wrap;
-    color: white;
-    align-items: start;
+  flex-wrap: wrap;
+  color: white;
+  align-items: start;
 }
 
 .contact-row1 {
-    height: 10vh;
+  height: 10vh;
 }
 
 .title {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 .send {
-    text-align: end;
+  text-align: end;
 }
 
-.send>.btn {
-    color: black;
-    background: var(--platinum);
-    margin: 3px 0;
-    border-radius: 10px;
+.send > .btn {
+  color: black;
+  background: var(--platinum);
+  margin: 3px 0;
+  border-radius: 10px;
 }
-
 
 .copyright {
-    color: white;
+  color: white;
 }

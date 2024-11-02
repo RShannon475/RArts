@@ -1,29 +1,29 @@
-@import 'styles.css';
+@import "styles.css";
 
 body {
-    background-color: var(--light-blue);
+  background-color: var(--light-blue);
 }
 
 .parent {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.parent>* {
-    margin: auto;
+.parent > * {
+  margin: auto;
 }
 
 .parent img {
-    border-radius: 50%;
-    min-width: 280px;
-    max-width: 280px;
+  border-radius: 50%;
+  min-width: 280px;
+  max-width: 280px;
 }
 
 .violin {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .bigname {
-    font-size: 3rem;
-    color: var(--glaucous);
+  font-size: 3rem;
+  color: var(--glaucous);
 }

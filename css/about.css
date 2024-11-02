@@ -1,72 +1,71 @@
-@import 'styles.css';
+@import "styles.css";
 
 * {
-    --blue1: rgba(74, 111, 136, 1);
-    --blue2: rgba(145, 167, 177, .1);
+  --blue1: rgba(74, 111, 136, 1);
+  --blue2: rgba(145, 167, 177, 0.1);
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to top, var(--blue1), var(--blue2));
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, var(--blue1), var(--blue2));
 }
 
 .row {
-    flex-wrap: nowrap;
-    align-items: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 
 .row img {
-    width: 100%;
+  width: 100%;
 }
 
 .textbox-title {
-    font-size: 1.5em;
-    line-height: 1;
-    word-wrap: break-word;
+  font-size: 1.5em;
+  line-height: 1;
+  word-wrap: break-word;
 }
 
 .textbox1 {
-    background-color: var(--light-blue);
-    border-radius: 10px;
-    z-index: 1000;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  z-index: 1000;
 }
 
 .textbox2 {
-    background-color: var(--light-blue);
-    border-radius: 10px;
-    z-index: 1000;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  z-index: 1000;
 }
 
 .textbox3 {
-    background-color: white;
-    border-radius: 10px;
-    z-index: 1000;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1000;
 }
 
 /* I tried to do this a medium (768) but bootstrap doesn't increase
    the jpg size enough to make it look good until large (992) */
 @media (min-width: 992px) {
-    .textbox-title {
-        font-size: 3em;
-        word-wrap: break-word;
-    }
+  .textbox-title {
+    font-size: 3em;
+    word-wrap: break-word;
+  }
 
-    .textbox1 {
-        transform: translate(-40%, 35%);
-    }
+  .textbox1 {
+    transform: translate(-40%, 35%);
+  }
 
-    .textbox2 {
-        transform: translate(20%, 30%);
-    }
+  .textbox2 {
+    transform: translate(20%, 30%);
+  }
 
-    .textbox3 {
-        transform: translate(-20%, 30%);
-    }
-
+  .textbox3 {
+    transform: translate(-20%, 30%);
+  }
 }
 
 .copyright {
-    color: white;
+  color: white;
 }
