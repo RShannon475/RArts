@@ -5,7 +5,7 @@ body {
   height: 100vh;
 }
 
-/* Hack? add an image under the body so we can add opacity */
+/* To add opacity to an image background, we must use body::after, not body */
 body::after {
   content: "";
   background-image: url("../images/Palaver_Aug2020_RedDoor_030_HR.jpg");
