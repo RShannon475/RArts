@@ -2,6 +2,26 @@
 
 body {
   background-color: var(--light-blue);
+  /* background: linear-gradient(to top, var(--blue-1), var(--blue-2)); */
+  background: var(--blue-2);
+  height: 100vh;
+}
+
+/* Hack? add an image under the body so we can add opacity */
+body::after {
+  content: "";
+  /* background-image: url('../images/from-2012.jpg'); */
+  /* background-image: url('../images/coughlin-west.jpg'); */
+  background-image: url("../images/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .parent {
@@ -26,4 +46,9 @@ body {
 .bigname {
   font-size: 3rem;
   color: var(--glaucous);
+}
+
+.bio {
+  color: black;
+  /* font-weight: bold; */
 }

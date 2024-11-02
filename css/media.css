@@ -1,7 +1,7 @@
 @import "styles.css";
 
 body {
-  background: #c5dcdd;
+  background: linear-gradient(to top, var(--coffee-1), var(--coffee-2));
   height: 100vh;
 }
 

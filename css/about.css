@@ -1,15 +1,10 @@
 @import "styles.css";
 
-* {
-  --blue1: rgba(74, 111, 136, 1);
-  --blue2: rgba(145, 167, 177, 0.1);
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to top, var(--blue1), var(--blue2));
+  background: linear-gradient(to top, var(--blue-1), var(--blue-2));
 }
 
 .row {

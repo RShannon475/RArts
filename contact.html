@@ -15,6 +15,12 @@
 </head>
 
 <body>
+    <script>
+        function showPopup() {
+            alert("Form submitted successfully!");
+            return false; // Do not refresh the page
+        }
+    </script>
     <div class="container">
 
         <nav class="navbar navbar-expand-sm">
@@ -45,28 +51,29 @@
 
         <div class="row mt-sm-3 contact-row2">
             <div class="col col-12 col-lg-6 pe-md-5">
-                <div class="pb-md-5 title">Contact Ryan.</div>
-                <p>If you’re interested in hiring Ryan, provide as much detail about the project as possible.</p>
+                <div class="pb-md-5 title">Contact Ryan</div>
+                <p>If you&apos;re interested in hiring Ryan, provide as much detail about the project as possible.</p>
                 <p>
-                    We’ll follow up soon.</p>
+                    We&apos;ll follow up soon.</p>
             </div>
+
             <div class="col-12 col-lg-6">
-                <form class="row g-3" action="mailto:nobody@example.com" method="post" enctype="text/plain">
-                    <div class="col col-6">
-                        <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" required>
-                    </div>
-                    <div class="col col-6">
-                        <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" required>
+
+                <form class="row g-3" action="https://api.web3forms.com/submit" method="POST"
+                    onsubmit="return showPopup()" id="form">
+                    <input type="hidden" name="access_key" value="8d0f6959-f6db-4449-b83e-02087b197453">
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                    <div class="col col-12">
+                        <label for="fullName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="fullName" name="name" required>
                     </div>
                     <div class="col col-12">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="col col-12">
                         <label for="notes" class="form-label">Share a bit about the project</label>
-                        <textarea class="form-control" id="notes" rows="4" required></textarea>
+                        <textarea class="form-control" id="notes" rows="4" name="notes" required></textarea>
                     </div>
                     <div class="col-12 send">
                         <button type="submit" class="btn">Send</button>
