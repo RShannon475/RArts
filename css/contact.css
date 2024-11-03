@@ -1,23 +1,45 @@
 @import "styles.css";
 
+/* At xs and sm screen size, there is too much conflict with Ryan's eyes in
+the photo, so we just use plain background for those sizes. */
 body {
-  background: white;
+  background: linear-gradient(to top, var(--melon-1), var(--melon-2));
   height: 100vh;
 }
 
-/* To add opacity to an image background, we must use body::after, not body */
-body::after {
-  content: "";
-  background-image: url("../images/Palaver_Aug2020_RedDoor_030_HR.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+@media (min-width: 768px) {
+  body {
+    background: white;
+    height: 100vh;
+  }
+
+  /* To add opacity to an image background, we must use body::after, not body */
+  body::after {
+    content: "";
+    background-image: url("../images/Palaver_Aug2020_RedDoor_030_HR.jpg");
+    /* background-image: url("../images/Ry.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 576px) {
+  .contact-row1 {
+    height: 3vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-row1 {
+    height: 10vh;
+  }
 }
 
 .contact-row2 {
@@ -26,12 +48,12 @@ body::after {
   align-items: start;
 }
 
-.contact-row1 {
-  height: 10vh;
-}
-
 .title {
   font-size: 3.5rem;
+}
+
+.text {
+  font-weight: bold;
 }
 
 .send {
