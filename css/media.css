@@ -2,6 +2,7 @@
 
 body {
   background: linear-gradient(to top, var(--coffee-1), var(--coffee-2));
+  background-repeat: repeat;
   height: 100vh;
 }
 
