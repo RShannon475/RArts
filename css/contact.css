@@ -1,32 +1,22 @@
 @import "styles.css";
 
-/* At xs and sm screen size, there is too much conflict with Ryan's eyes in
-the photo, so we just use plain background for those sizes. */
 body {
-  background: linear-gradient(to top, var(--melon-1), var(--melon-2));
-  height: 100vh;
+  background: linear-gradient(to bottom, var(--melon-2), var(--melon-1));
 }
 
+/* At xs and sm screen size, there is too much conflict with Ryan's eyes in
+the photo, so we just use plain background for those sizes. */
 @media (min-width: 768px) {
   body {
-    background: white;
-    height: 100vh;
-  }
-
-  /* To add opacity to an image background, we must use body::after, not body */
-  body::after {
-    content: "";
-    background-image: url("../images/Palaver_Aug2020_RedDoor_030_HR.jpg");
-    /* background-image: url("../images/Ry.jpg"); */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url("../images/Palaver_Aug2020_RedDoor_030_HR.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    opacity: 0.85;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
   }
 }
 

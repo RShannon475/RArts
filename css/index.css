@@ -1,27 +1,15 @@
 @import "styles.css";
 
 body {
-  background-color: var(--light-blue);
-  /* background: linear-gradient(to top, var(--blue-1), var(--blue-2)); */
-  background: var(--blue-2);
-  height: 100vh;
-}
-
-/* Hack? add an image under the body so we can add opacity */
-body::after {
-  content: "";
-  /* background-image: url('../images/from-2012.jpg'); */
-  /* background-image: url('../images/coughlin-west.jpg'); */
-  background-image: url("../images/bg3.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../images/bg3.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
 }
 
 .parent {
@@ -46,6 +34,16 @@ body::after {
 .bigname {
   font-size: 3rem;
   color: var(--glaucous);
+}
+
+/* For cell phones the title text needs to be much smaller. */
+@media (max-width: 575px) {
+  .violin {
+    font-size: 1rem;
+  }
+  .bigname {
+    font-size: 1.5rem;
+  }
 }
 
 .bio {
