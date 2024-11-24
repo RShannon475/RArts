@@ -8,7 +8,6 @@ body {
 the photo, so we just use plain background for those sizes. */
 @media (min-width: 768px) {
   body {
-    background-color: var(--melon-2);
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.1),
@@ -18,18 +17,6 @@ the photo, so we just use plain background for those sizes. */
     background-repeat: no-repeat;
     /* background-position: center; */
     background-size: cover;
-  }
-}
-
-@media (min-width: 576px) {
-  .contact-row1 {
-    height: 3vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .contact-row1 {
-    height: 10vh;
   }
 }
 
