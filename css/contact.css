@@ -1,21 +1,26 @@
 @import "styles.css";
 
 body {
-  background: linear-gradient(to bottom, var(--melon-2), var(--melon-1));
+  /* Include color for browsers that don't support gradients */
+  background-color: var(--melon-1);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/ryan-2024-2-contact-small.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
-/* At xs and sm screen size, there is too much conflict with Ryan's eyes in
-the photo, so we just use plain background for those sizes. */
 @media (min-width: 768px) {
   body {
     background-image: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.1)
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2)
       ),
-      url("../images/red-door-2.jpg");
-    background-repeat: no-repeat;
-    /* background-position: center; */
+      url("../images/ryan-2024-2-contact.jpg");
     background-size: cover;
   }
 }

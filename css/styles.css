@@ -8,16 +8,30 @@
   --blue-2: #bbdef0;
   --melon-1: #c86f57;
   --melon-2: #f2a79a;
-  /* --green-1: #66b79b;
+  --green-1: #66b79b;
   --green-2: #d5ebe3;
+  --olivine: #a8c686;
+  --coffee-1: #af875a;
+  --coffee-2: #d7c3ac;
+  --honeydew: #f0f8ea;
+  --white-smoke: #f1f2ee;
+  --silver: #bfb7b6;
+  --battleship-gray: #848c8e;
+  /*
   --yellow-1: #ccaa00;
   --yellow-2: #ffee99;
   --gray-1: #778392;
   --gray-2: #d2d6db;
   --purple-1: #6168a8;
-  --purple-2: #cacde2; */
-  --coffee-1: #af875a;
-  --coffee-2: #d7c3ac;
+  --purple-2: #cacde2;
+  --purple-3: #a27ba3;
+  --salmon-pink: #ff9fb2;
+  --mimi-pink: #fbdce2;
+  --keppel: #60ab9a;
+  --vivid-sky-blue: #0acdff;
+  --outer-space: #435058;
+  --mindaro: #dcf763;
+  */
 }
 
 body {
@@ -32,10 +46,6 @@ body {
   font-family: "Fira Code", monospace;
   font-size: 1.6rem;
   font-weight: 300;
-}
-
-.nav-link {
-  color: black;
 }
 
 .copyright {

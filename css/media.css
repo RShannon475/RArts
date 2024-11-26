@@ -1,7 +1,14 @@
 @import "styles.css";
 
 body {
-  background: linear-gradient(to bottom, var(--coffee-2), var(--coffee-1));
+  /* Include color for browsers that don't support gradients */
+  background-color: var(--coffee-2);
+  background-image: radial-gradient(
+    var(--silver),
+    var(--battleship-gray),
+    var(--white-smoke),
+    white
+  );
 }
 
 .card {
