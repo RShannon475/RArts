@@ -2,7 +2,7 @@
 
 body {
   /* Include color for browsers that don't support gradients */
-  background-color: var(--honeydew);
+  background-color: var(--blue-1);
   background-image: radial-gradient(
     circle,
     var(--honeydew),

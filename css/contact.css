@@ -2,7 +2,7 @@
 
 body {
   /* Include color for browsers that don't support gradients */
-  background-color: var(--melon-1);
+  background-color: black;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.6),
