@@ -1,15 +1,14 @@
 @import "styles.css";
 
 body {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.85)
-    ),
-    url("../images/bg3.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  /* Include color for browsers that don't support gradients */
+  background-color: var(--honeydew);
+  background-image: radial-gradient(
+    circle,
+    var(--honeydew),
+    var(--green-2),
+    var(--blue-1)
+  );
 }
 
 .parent {
@@ -42,7 +41,7 @@ body {
     font-size: 1rem;
   }
   .bigname {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
