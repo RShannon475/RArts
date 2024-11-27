@@ -1,7 +1,7 @@
 @import "styles.css";
 
 body {
-  /* Include color for browsers that don't support gradients */
+  /* Include color for browsers that don't support gradients. Must be same as final gradient color. */
   background-color: white;
   background-image: radial-gradient(
     var(--silver),

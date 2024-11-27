@@ -4,13 +4,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  /* Include color for browsers that don't support gradients */
-  background-color: var(--honeydew);
+  /* Include color for browsers that don't support gradients. Must match outer-most
+    color of radial-gradient, for top/bottom edges of phones. */
+  background-color: var(--blue-2);
   background-image: radial-gradient(
     circle,
-    var(--olivine),
-    var(--green-1),
-    var(--honeydew)
+    var(--glaucous),
+    var(--green-2),
+    var(--blue-2),
+    white
   );
 }
 
@@ -30,13 +32,13 @@ body {
 }
 
 .textbox1 {
-  background-color: var(--light-blue);
+  background-color: var(--white-smoke);
   border-radius: 10px;
   z-index: 1000;
 }
 
 .textbox2 {
-  background-color: var(--light-blue);
+  background-color: var(--white-smoke);
   border-radius: 10px;
   z-index: 1000;
 }
