@@ -51,7 +51,7 @@ body {
 
 /* I tried to do this a medium (768) but bootstrap doesn't increase
    the jpg size enough to make it look good until large (992) */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .textbox-title {
     font-size: 3em;
     word-wrap: break-word;
