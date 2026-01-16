@@ -1,0 +1,148 @@
+@import "styles.css";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Include color for browsers that don't support gradients. Must match outer-most
+    color of radial-gradient, for top/bottom edges of phones. */
+  background-color: var(--blue-2);
+  background-image: radial-gradient(
+    circle,
+    var(--yellow-2),
+    var(--honeydew),
+    var(--blue-2),
+    white
+  );
+}
+
+.row {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.row img {
+  width: 100%;
+}
+
+.textbox-title {
+  font-size: 1.5em;
+  line-height: 1;
+  word-wrap: break-word;
+}
+
+.textbox1 {
+  background-color: var(--white-smoke);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.textbox2 {
+  background-color: var(--white-smoke);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.textbox3 {
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+/* I tried to do this a medium (768) but bootstrap doesn't increase
+   the jpg size enough to make it look good until large (992) */
+@media only screen and (min-width: 992px) {
+  .textbox-title {
+    font-size: 3em;
+    word-wrap: break-word;
+  }
+
+  .textbox1 {
+    transform: translate(-40%, 35%);
+  }
+
+  .textbox2 {
+    transform: translate(20%, 30%);
+  }
+
+  .textbox3 {
+    transform: translate(-20%, 30%);
+  }
+}
+
+.copyright {
+  color: white;
+}
+
+/*   *************************** */
+
+.event-container {
+  /* font-family: "Roboto", sans-serif; */
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+}
+
+.event-container .year {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.event-container .event {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+  background-color: var(--white-smoke);
+}
+
+.event .event-left {
+  background: #222;
+  /* min-width: 82px; */
+  min-width: 120px;
+  display: flex;
+  align-items: center; /* vertical */
+  justify-content: center;
+  color: #eee;
+  /* padding: 8px 48px; */
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.event .event-left .date {
+  font-size: 40px;
+}
+
+.event .event-left .month {
+  /* font-size: 16px; */
+  font-weight: normal;
+}
+
+.event .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.event .event-right .event-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #218bbb;
+  /* text-transform: uppercase; */
+}
+
+.event .event-right .event-timing {
+  /* background: #fff8ba; */
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: auto;
+  /* padding: 8px; */
+  padding: 8px 0;
+  border-radius: 16px;
+  /* margin: 24px 0; */
+  margin: 18px 0;
+  /* font-size: 14px; */
+}
