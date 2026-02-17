@@ -82,6 +82,10 @@ body {
   /* margin: 0 auto; */
 }
 
+.event-container .soon {
+  text-align: center;
+}
+
 .event-container .year {
   font-size: 40px;
   text-align: center;
